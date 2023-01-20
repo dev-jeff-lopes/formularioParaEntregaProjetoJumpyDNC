@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="assets/img/icon01.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer> </script>
+    <title>Jumpy4</title>
+</head>
+
+<body>
+    <div class="logo">
+        <img class="logo-dnc" src="assets/img/logoDNC.png" alt="logo DNC" title="logo DNC">
+    </div>
+    <section class="formulario">
+        <header>
+            <img class="logo-jumpy" src="assets/img/jumpy 1.png" alt="logo jumpy" title="logo jumpy">
+            <p>Bem vindo ao Jumpy!</p>
+        </header>
+        <form id="myForm">
+            <div class="boxs">
+                <label for="name" class="nome">Nome Completo:</label>
+                <input type="text" id="name" placeholder="Nome completo" >
+                <span id="nameError">*Campo Obrigatório*</span>
+            </div>
+
+
+            <div class="boxs">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email@email.com" >
+                <span id="emailError">*Campo Obrigatório*</span>
+            </div>
+
+            <div class="boxs">
+                <label for="phone">Telefone:</label>
+                <input type="tel" id="phone" placeholder="(00) 00000-0000"  >
+                <span id="phoneError">*Campo Obrigatório*</span>
+            </div>
+
+
+            <div class="boxs">
+                <label for="cpf">CPF:</label>
+                <input type="text" id="cpf" placeholder="000.000.000-00" >
+                <span id="cpfError">*Campo Obrigatório*</span>
+            </div>
+
+
+            <div class="boxs">
+                <label for="password">Senha:</label>
+                <input type="password" id="password"  placeholder="*******************" >
+                <span id="passwordError">*Campo Obrigatório*</span>
+            </div> 
+            <div class="boxs">
+                <button type="submit"  onclick="validateForm()">Cadastrar</button>
+                <span id="erro">Campos obrigatórios não registrados.</span>
+                <span id="sucesso">Sucesso</span>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
